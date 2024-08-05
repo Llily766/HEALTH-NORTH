@@ -46,4 +46,7 @@ table, caption, th, td {
   padding: 8px;
   }
   
-  
+option {
+  font-weight: bolder;
+  font-style: italic;
+}
