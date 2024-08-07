@@ -48,5 +48,26 @@ table, caption, th, td {
   
 option {
   font-weight: bolder;
-  font-style: italic;
+  
+}
+
+.bold{
+  font-weight: bold ;
+}
+.italic{
+  font-style:italic;
+}
+
+.bouton{
+  display: block;
+  background-color: #719fee;
+  border-radius: 10px;
+  border: 4px double #1f69ec;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+
 }
