@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript FullCalendar</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,9 +21,18 @@
 <script>
     $(document).ready(function() {
     $('#calendar').fullCalendar();
+        header:
+        {
+            left: 'month, agendaWeek, agendaDay, list'
+            center:'title'
+            right:'prev,today,next'
+        }
+        footer:
+        {
+
+        }
  });
  </script>
 
 
 
-</script>
