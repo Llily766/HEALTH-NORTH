@@ -13,21 +13,17 @@
 </head>
 
 <body>
-
-
-  <img src="/assets/labo.jpg" alt="labo" width="100%" height="auto">
-
-  <h3>Bienvenue</h3>
-  
-  <input type="text" placeholder="Nom" />
-  <input type="text" placeholder="E-mail" />
-  
-(l"email sera commmun à tout le laboratoire)
-
-
-
-<a href="planningmedecin.php">Aller à la page planningmedecin</a>
-
+  <?php echo '<p><h1>Bilan de l'imagerie</p><h1>'; ?>
+  <div class="container">
+    <div class="row">
+      
+    <h5>Docteur Dupont</h5>
+      <p>120 rue du pont neuf</p>
+      <p>76000 Rouen</p>
+    </div>
+  </div>
+  <div class="container">
+    
 
 </body>
 

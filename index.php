@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,26 +11,18 @@
 </head>
 <body>
 
-  <form>
-     
-    
+  <form action="action.php"method="post">
+  <?php echo '<p>Bonjour le monde</p>'; ?>
     <h3>Consultation du dossier patient :</h3>
     <div class="inputs">
       <input type="email" placeholder="Email" />
       <input type="password" placeholder="Mot de passe"/>
-
-  
-
-    </div>
     
-    <p class="inscription">Je n'ai pas de <span>compte</span>. Je m'en <span>crée</span> un.</p>
-    <p> créer un compte</p>
-    <input type="email" placeholder="Email" />
-    <input type="password" placeholder="Mot de passe"/><br/>
-    
-    
-
-  
+      <p class="inscription">Je n'ai pas de <span>compte</span>. Je m'en <span>crée</span> un.</p>
+      <p>Créer un compte</p>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Mot de passe"/><br/>
+     
       <a href="accueil.html">Aller à la page Accueil</a>
       <p>(ou consulter votre dossier patient sans modification)</p>
     </div>

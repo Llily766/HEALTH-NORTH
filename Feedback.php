@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <h1>DonnezVotreAvis</h1>
+<?php echo '<p><h1>Accueil</p><h1>'; ?>   
+<h1>DonnezVotreAvis</h1>
     
     <div class="form-box">
         <div class="textup">

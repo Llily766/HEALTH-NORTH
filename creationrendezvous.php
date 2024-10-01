@@ -14,7 +14,7 @@
 
 <body>
 
-
+<?php echo '<p><h1>Accueil</p><h1>'; ?>
 
   <div class="container">
     <h1>Prise de rendez vous</h1>

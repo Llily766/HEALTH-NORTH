@@ -10,9 +10,9 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-   <div class="container">
-   <h1>Accueil</h1>
 
+   <div class="container">
+   <?php echo '<p><h1>Accueil</p><h1>'; ?>
    <p> La société HEALTH NORTH fait partie des leaders européens sur les prélèvements médicaux pour les
       particuliers.
       Fondé en 1987 avec l’ouverture de trois laboratoires diagnostiques et d’imagerie au Danemark, le

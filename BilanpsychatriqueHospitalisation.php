@@ -10,28 +10,12 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-   <div class="container">
-
-<h1>Ordonnances</h1>
-<p>Docteur Dupont </p>
-<p>CHU DE ROUEN </p>
-<p>76000 ROUEN </p>                                   <p> A Rouen le 17 Juillet 2024,</p>
-                                                     <p> A Aurelie B</p>
-
-
-
-
-
-<h3>Paracéthamol 1 comprimé 3 fois/jour</h3>
-<h3>pendant 7 jours</h3> 
-
-
-<h3>Voltarène pommade Appliquer 3 fois/jour</h3>
-<h3>pendant 7 jours</h3>
-
-
-<a href="accueil.html">Aller à la page accueil</a>
-
-   </div>
+<?php echo '<p><h1>Accueil</p><h1>'; ?>  
+  <h1>Bilan</h1>
+  <img src="assets/Radiologie.jpg">
+  
+    <h5>Docteur x</p>
+      <p>120 rue du pont neuf</p>
+      <p>76000 Rouen</p>
 </body>
 </html>

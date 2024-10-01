@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,8 +15,8 @@
 <body>
    <div class="container">
 
-<h1>Dossier patient</h1>
 
+<?php echo '<p><h1>Dossier patient</p><h1>'; ?>
 <h3>Nom :</h3>
 <h3>Prénom :</h3>
 <h3>Photo</h3>
