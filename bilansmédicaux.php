@@ -8,7 +8,8 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <?php echo '<p><h1>Bilansmédicaux</p><h1>'; ?>
+<div class="container">
+
   <img src="assets/Radiologie.jpg">
   <h1>IMAGERIE MEDICALE</h1>
     <h5>Docteur x</p>

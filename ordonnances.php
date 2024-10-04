@@ -30,7 +30,7 @@
 <h3>pendant 7 jours</h3>
 
 
-<a href="accueil.html">Aller à la page accueil</a>
+
 
    </div>
 </body>

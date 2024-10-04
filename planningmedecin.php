@@ -100,9 +100,7 @@
             </div>
         </div>
     </div>
-    <a href="accueil.html">Aller à la page accueil </a>
-    <a href="Feedback.html">Aller à page Feedback</a>
-
+    
 
 
 </div>

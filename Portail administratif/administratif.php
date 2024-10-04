@@ -10,7 +10,7 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<?php echo '<p><h1>Administratif</p><h1>'; ?>   
+<?php echo '<p><h1></p><h1>'; ?>   
 <h1>Nom:Aurelie B</h1>
 <table>
 

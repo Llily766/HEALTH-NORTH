@@ -14,9 +14,9 @@
 </head>
 <body>
    <div class="container">
+<h1>DossierPatient</h1>
 
-
-<?php echo '<p><h1>Dossier patient</p><h1>'; ?>
+<h1>DOSSIERPATIENT</h1>
 <h3>Nom :</h3>
 <h3>Prénom :</h3>
 <h3>Photo</h3>
@@ -60,12 +60,6 @@
       </div>
 
 
-  
-
-
-
-
-<a href="creation rendez vous.html">Aller à un rendez vous</a>
 
    </div>
 </body>

@@ -12,22 +12,23 @@
 <body>
 
    <div class="container">
-   <?php echo '<p><h1>Accueil</p><h1>'; ?>
-   <p> La société HEALTH NORTH fait partie des leaders européens sur les prélèvements médicaux pour les
+   
+   <h1>accueil</h1>
+   <p>La société HEALTH NORTH fait partie des leaders européens sur les prélèvements médicaux pour les
       particuliers.
       Fondé en 1987 avec l’ouverture de trois laboratoires diagnostiques et d’imagerie au Danemark, le
       groupe s’est rapidement développé en appliquant une stratégie d’acquisition de laboratoires
-      partenaires de qualité sur l’ensemble du continent européen.</p>
+      partenaires de qualité sur l’ensemble du continent européen.
       Cette année, Health NORTH fusionne avec la grande entreprise d’hospitalisation privée, présente en
       Suède, en Norvège, en Finlande, en France et au Royaume-Uni. 
-      <p>Grâce à cette fusion, la structure devient alors le leader incontesté des services diagnostiques et 
+      Grâce à cette fusion, la structure devient alors le leader incontesté des services diagnostiques et 
          d’hospitalisation en Europe.
       Health NORTH exploite son expertise en médecine de laboratoire, en imagerie et en pathologie pour
-      fournir des réponses aux questions diagnostiques dans toutes les disciplines médicales.
-      </p> 
-      <p> Notre catalogue de services couvre tous les aspects du diagnostic, notamment dans les domaines suivants :
+      fournir des réponses aux questions diagnostiques dans toutes les disciplines médicales.</p>
+      
+      <p>Notre catalogue de services couvre tous les aspects du diagnostic, notamment dans les domaines suivants :</p>
    <ul>
-      <li>Chirurgie ambulatoire;
+     <li>Chirurgie ambulatoire;
       <li> Hospitalisation;
       <li>Imagerie médicale;
       <li> Médecine reproductive et génétique;
@@ -35,6 +36,7 @@
       <li>Tests spécialisés.
       </li>
    </ul>
+
 <p>  La biologie médicale est une composante importante du système de santé. Elle concourt au
 diagnostic, au dépistage, à l’évaluation des risques, au suivi des patients, etc.</p> 
 
@@ -44,11 +46,7 @@ diagnostic, au dépistage, à l’évaluation des risques, au suivi des patients
    
 
 
-  <a href="dossier patient.html">Aller à la page dossier patient</a>
-  <a href="ordonnances.html">Aller à la page ordonnances</a>
-  <a href="creation rendez vous.html">Aller à un rendez vous</a>
-  <a href="planningmedecin.php">Aller à un planningmedecin</a>
-  <a href="carte.html">Aller à carte</a>
+
 </div>
 </body>
 </html>

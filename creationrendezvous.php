@@ -11,10 +11,9 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
 
-<?php echo '<p><h1>Accueil</p><h1>'; ?>
+<?php echo '<p><h1>Cartes</p><h1>'; ?>
 
   <div class="container">
     <h1>Prise de rendez vous</h1>

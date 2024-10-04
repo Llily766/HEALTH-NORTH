@@ -13,16 +13,14 @@
 </head>
 
 <body>
-  <?php echo '<p><h1>Bilan de l'imagerie</p><h1>'; ?>
-  <div class="container">
-    <div class="row">
-      
+<div class="container">
+  
+     <h1>Bilandelimagerie</h1> 
     <h5>Docteur Dupont</h5>
       <p>120 rue du pont neuf</p>
       <p>76000 Rouen</p>
     </div>
   </div>
-  <div class="container">
     
 
 </body>

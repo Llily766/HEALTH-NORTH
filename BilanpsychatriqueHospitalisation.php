@@ -10,9 +10,10 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<?php echo '<p><h1>Accueil</p><h1>'; ?>  
-  <h1>Bilan</h1>
-  <img src="assets/Radiologie.jpg">
+<div class="container">
+
+ 
+  
   
     <h5>Docteur x</p>
       <p>120 rue du pont neuf</p>

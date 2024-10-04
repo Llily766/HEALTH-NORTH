@@ -10,9 +10,7 @@ h1 {
   color: rgba(148, 7, 7, 0.904) ;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-p {
-text-align: justify;
-}
+
  
 label {
   display: block;
@@ -70,4 +68,7 @@ option {
   width: 200px;
   cursor: pointer;
 
+}
+p{
+  color:black
 }
