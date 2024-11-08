@@ -10,10 +10,21 @@
     <div class="container">
         <h2>Formulaire d'inscription</h2>
         <form action="inscription.php" method="POST">
-            <label for="username">Nom d'utilisateur</label>
+            <label for="username">Nom</label>
             <input type="text" id="username" name="username" required>
 
-            
+            <label for="prenom">prenom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="login">login</label>
+            <input type="text" id="login" name="login" required>
+
+            <label for="login">adresse</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
 
             <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" required>
