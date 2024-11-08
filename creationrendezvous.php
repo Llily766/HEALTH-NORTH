@@ -7,13 +7,15 @@
   <title>E5: Option " Solutions logicielles et Applications métiers
 
   </title>
+
+  <link href="styles.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="styles.css" rel="stylesheet">
+ 
 </head>
 <body>
 
-<?php echo '<p><h1>Cartes</p><h1>'; ?>
+
 
   <div class="container">
     <h1>Prise de rendez vous</h1>
@@ -64,7 +66,7 @@
 
     </select>
   </div>
-  <a href="accueil.html">Aller à Accueil</a>
+  <a href="accueil.php">Aller à Accueil</a>
   
   <a href="planningmedecin.php">Aller à la page planningmedecin</a>
 
