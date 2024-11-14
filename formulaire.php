@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Formulaire d'inscription</title>
 </head>
 <body>
@@ -13,14 +14,14 @@
             <label for="username">Nom</label>
             <input type="text" id="username" name="username" required>
 
-            <label for="prenom">prenom</label>
-            <input type="text" id="prenom" name="prenom" required>
+            <label for="Prenom">Prenom</label>
+            <input type="text" id="Prenom" name="Prenom" required>
 
-            <label for="login">login</label>
-            <input type="text" id="login" name="login" required>
+            <label for="Login">Login</label>
+            <input type="text" id="Login" name="Login" required>
 
-            <label for="login">adresse</label>
-            <input type="text" id="adresse" name="adresse" required>
+            <label for="login">Adresse</label>
+            <input type="text" id="Adresse" name="Adresse" required>
 
 
             <label for="email">Email</label>

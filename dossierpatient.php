@@ -26,39 +26,13 @@
 <h3>Numero de sécurité sociale _ _ _ _ _ _ _ _ _ _ _ _ </h3>
 <h3>email</h3>
 <h3>téléphone</h3>
-<h3>Personne à contacter</h3>
+<h3>Personne a contacter</h3>
 <h3>Médecin traitant</h3>
 <h3> Observations (Allergies,..)</h3>
 
 
 
-<table>
-  
-  
- 
- <tr> <th>Rendez-vous effectués ou pris</th> <th>Horaires</th> <th>Lieu</th><th>Documents médicaux</th> </tr>
- 
- <tr> <td>Imagerie médicale</td> <td>le 17 juillet à 10h30</td>   <td>Amiens</td> <td><a href="bilans médicaux.html" >bilans médicaux</a></td></tr>
- 
- <tr> <td>Psychiatre</td> <td>23 aout à 9h</td> <td> Lille</td> <td><a href="Bilan psychatrique + Hospitalisation.html">Bilan de l'hospitalisation</a></td></tr>
- 
- <tr> <td>Echographie</td> <td>le 29 juillet à 14h</td> <td>Rouen</td> <td><a href="Bilan de l'imagerie.html">Bilan de l'imagerie</a></td>  </tr>
- 
- <tr> <td>IRM</td> <td>le 14 aout à 14h</td> <td>Paris</td> <td><a href="bilans médicaux.html">Bilan medicaux</a></td> </tr>
- 
-
- </table>
- 
- <div class="container">
-   <h1>Envoyer un mail pour rappel</h1>
-     <p>M'envoyer un <a href="mailto:aubin200683@gmail.com">mail</a></p>
-   </div>
-
-   <div class="container">
-      <h1>Envoyer un message pour rappel </h1>
-      <p>M'envoyer un <a href="sms:0683898892">Message SMS</a></p>
-      </div>
-
+<
 
 
    </div>
