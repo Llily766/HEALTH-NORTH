@@ -66,9 +66,7 @@
 
     </select>
   </div>
-  <a href="accueil.php">Aller à Accueil</a>
-  
-  <a href="planningmedecin.php">Aller à la page planningmedecin</a>
+
 
 </body>
 

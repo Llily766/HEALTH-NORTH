@@ -45,13 +45,10 @@
                     <?php
                     if (isset($centres)) {
                         foreach($centres as $centre) {
-                            // <option value="centre1">Centre Médical Saint-Jean</option>
-                        //       <option value="centre2">Clinique du Parc</option>
-                        //     <option value="centre3">Hôpital Central</option>
-                        //    <option value="centre4">Centre d'Imagerie Médicale</option>
-                            // echo "<option value='" . htmlspecialchars($centre['id']) . "'>" . 
-                                //  htmlspecialchars($centre['nom']) . "</option>";
-                               
+                            
+                            echo "<option value='" . htmlspecialchars($centre['id']) . "'>" . 
+                                 htmlspecialchars($centre['nom']) . "</option>";
+                              
                                 
                                
                                  
