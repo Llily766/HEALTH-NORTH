@@ -17,14 +17,15 @@
  
     <div class="container">
     <div class="topnav">
-        <a class="active" href="quiSommesNous.html">Qui sommes-nous?</a>
-        <a href="carte.html">Contact</a>
-        <a href="personne.html">Se Connecter</a>
-        <a href="lien.html">Creer un compte</a>
-        <a href="Centres.html">Liste des centres</a>
+        <a class="active" href="quiSommesNous.php">Qui sommes-nous?</a>
+        <a href="carte.php">Contact</a>
+        <a href="personne.php">Se Connecter</a>
+        <a href="lien.php">Creer un compte</a>
+        <a href="Centres.php">Liste des centres</a>
+        <a href="PriseRDV.php">Prendre RDV</a>
     </div> 
       <div class="container">
-      <img src="assets/labo.jpg "width="1900px"heignt='200px'>
+      <img src="assets/labo.jpg "width="1500px"heignt='200px'>
       
       </div>
       

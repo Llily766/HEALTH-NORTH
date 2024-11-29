@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +10,19 @@
    
     <div class="container">   
    <div class="topnav">
-    <a  href="quiSommesNous.html">Qui sommes-nous?</a>
-    <a href="carte.html">Contact</a>
-    <a class="active" href="personnes.html">Se Connecter</a>
-    <a href="lien.html">Creer un compte</a>
-    <a href="Centres.html">Liste des centres</a>
+    <a  href="quiSommesNous.php">Qui sommes-nous?</a>
+    <a href="carte.php">Contact</a>
+    <a class="active" href="personne.php">Se Connecter</a>
+    <a href="lien.php">Creer un compte</a>
+    <a href="Centres.php">Liste des centres</a>
+    <a href="PriseRDV.php">Prendre RDV</a>
    </div>
+   <img src="assets/labo.jpg "width="900px"heignt='200px'>
 
-
-      <div class="container">
-        <img src="assets/labo.jpg "width="1500px"heignt='200px'>
-        </div>
-
+    
         <form action="testConnexion.php" method="POST">
-            <label for="username">login</label>
-            <input type="text" id="login" name="login" required>
+            <label for="Nom">Nom</label>
+            <input type="text" id="Nom" name="Nom" required>
 
              <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" required>

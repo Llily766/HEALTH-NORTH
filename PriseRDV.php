@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prise de rendez-vous médical</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 min-h-screen p-8">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+
+
     <?php
     // Connexion à la base de données
     $servername = "192.168.1.15";
@@ -31,9 +31,27 @@
                 <span class='block sm:inline'> Impossible de se connecter à la base de données: " . $e->getMessage() . "</span>
               </div>";
     }
+
+
+
     ?>
 
-    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+</head>
+<body>
+   
+    <div class="container">   
+   <div class="topnav">
+    <a  href="quiSommesNous.php">Qui sommes-nous?</a>
+    <a href="carte.php">Contact</a>
+    <a class="personnes.php">Se Connecter</a>
+    <a href="lien.php">Creer un compte</a>
+    <a href="Centres.php">Liste des centres</a>
+    <a href="active"href="PriseRDV.php">Prendre RDV</a>
+   </div>
+   <img src="assets/labo.jpg "width="900px"heignt='200px'>
+
+    
+   <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
         <h1 class="text-3xl font-bold text-gray-800 mb-8">Prise de rendez-vous médical</h1>
         
         <form class="space-y-6">
@@ -43,18 +61,11 @@
                 <select id="centre" name="centre" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     <option value="">Sélectionnez un centre</option>
                     <?php
-                    if (isset($centres)) {
-                        foreach($centres as $centre) {
-                            
-                            echo "<option value='" . htmlspecialchars($centre['id']) . "'>" . 
-                                 htmlspecialchars($centre['nom']) . "</option>";
-                              
-                                
-                               
-                                 
-                               
+                        if (isset($centres)) {
+                            foreach($centres as $centre) {
+                            echo "<option value='" . htmlspecialchars($centre['id']) . "'>".htmlspecialchars($centre['nom']) . "</option>";
+                            }
                         }
-                    }       
                     ?>
                 </select>
             </div>
@@ -68,6 +79,7 @@
                     <option value="med2">Dr. Dubois</option>
                     <option value="med3">Dr. Bernard</option>
                     <option value="med4">Dr. Robert</option>
+                  
                 </select>
             </div>
 
@@ -103,7 +115,11 @@
                     Prendre rendez-vous
                 </button>
             </div>
+     
+
         </form>
+    </div>
+
     </div>
 </body>
 </html>

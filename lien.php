@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prise de rendez-vous médical</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen p-8">
+
+
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a href="quiSommesNous.php">Qui sommes-nous?</a>
+            <a href="carte.php">Contact</a>
+            <a href="personne.php">Se Connecter</a>
+            <a href="active"href="lien.php">Creer un compte</a>
+            <a href="Centres.php">Liste des centres</a>
+            <a href="PriseRDV.php">Prendre RDV</a>
+    <?php
+    // Connexion à la base de données
+    $servername = "192.168.1.15";
+    $username = "healthnorth";
+    $password = "healthnorth-password";
+    $dbname = "inscriptions";
+
+    try {
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        
+        // Préparation et exécution de la requête
+        $stmt = $conn->prepare("SELECT * FROM cabinetsmedicaux ORDER BY nom");
+        $stmt->execute();
+        
+        // Récupération des résultats
+        $centres = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+    } catch(PDOException $e) {
+        echo "<div class='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative' role='alert'>
+                <strong class='font-bold'>Erreur!</strong>
+                <span class='block sm:inline'> Impossible de se connecter à la base de données: " . $e->getMessage() . "</span>
+              </div>";
+    }
+    ?>
+
     <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
         <h1 class="text-3xl font-bold text-gray-800 mb-8">Prise de rendez-vous médical</h1>
         
@@ -15,12 +51,17 @@
             <div>
                 <label for="centre" class="block text-sm font-medium text-gray-700 mb-2">Centre médical</label>
                 <select id="centre" name="centre" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                  <!-- <option value="">Sélectionnez un centre</option> -->
-                    <!-- <option value="centre1">Centre Médical Saint-Jean</option> -->
-                    <!-- <option value="centre2">Clinique du Parc</option> -->
-                    <!-- <option value="centre3">Hôpital Central</option> -->
-                    <!-- <option value="centre4">Centre d'Imagerie Médicale</option> -->
-                    --> 
+                    <option value="">Sélectionnez un centre</option>
+                    <?php
+                   
+                   
+                    
+if (isset($centres)) {
+    foreach($centres as $centre) {
+      echo "<option value='" . htmlspecialchars($centre['id']) . "'>".htmlspecialchars($centre['nom']) . "</option>";
+    }
+  }
+?>
                 </select>
             </div>
 
@@ -68,6 +109,8 @@
                     Prendre rendez-vous
                 </button>
             </div>
+     
+
         </form>
     </div>
 </body>

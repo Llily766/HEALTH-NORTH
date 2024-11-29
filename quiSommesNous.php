@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,12 @@
    
     <div class="container">   
    <div class="topnav">
-    <a class="active"href="quiSommesNous.html">Qui sommes-nous?</a>
-    <a href="carte.html">Contact</a>
-    <a href="personne.html">Se Connecter</a>
-    <a href="lien.html">Creer un compte</a>
-    <a href="Centres.html">Liste des centres</a>
+    <a class="active"href="quiSommesNous.php">Qui sommes-nous?</a>
+    <a href="carte.php">Contact</a>
+    <a href="personne.php">Se Connecter</a>
+    <a href="lien.php">Creer un compte</a>
+    <a href="Centres.php">Liste des centres</a>
+    <a href="PriseRDV.php">Prendre RDV</a>
     </div> 
 
 
@@ -45,6 +46,11 @@
     Tests spécialisés.<br>
     La biologie médicale est une composante importante du système de santé. 
     Elle concourt au diagnostic, au dépistage, à l’évaluation des risques, au suivi des patients, etc.</p>
+    
+
+    <h3>Affichage des dernières actualités de la clinique</h3>
+
     </div>
-</body>
+
+    </body>
 </html>
