@@ -15,7 +15,7 @@
     <a class="active" href="personne.php">Se Connecter</a>
     <a href="lien.php">Creer un compte</a>
     <a href="Centres.php">Liste des centres</a>
-    <a href="PriseRDV.php">Prendre RDV</a>
+    
    </div>
    <img src="assets/labo.jpg "width="900px"heignt='200px'>
 

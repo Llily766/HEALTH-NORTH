@@ -22,7 +22,7 @@
         <a href="personne.php">Se Connecter</a>
         <a href="lien.php">Creer un compte</a>
         <a href="Centres.php">Liste des centres</a>
-        <a href="PriseRDV.php">Prendre RDV</a>
+        
     </div> 
       <div class="container">
       <img src="assets/labo.jpg "width="1500px"heignt='200px'>
@@ -54,11 +54,12 @@
 Nos centres partenaires :
 
 Découvrez nos centres médicaux partenaires,répétis stratégiquement dans toute la région:
-<li>Centre Médical du Nord_Lille</li>
-<li>Clinique Saint-Martin-Dunkerque</li>
-<li>Pôle Santé des Flandres- Valenciennes</li>
-<li>Cabinet Médical de l'Artois-Arras</li>
-
+<li>Centre Médical St Jean</li>
+<li>Clinique du Parc</li>
+<li>Hopital central</li>
+<li>Cabinet d imagerie Bordeaux</li>
+<li>Clinique du Bois a Lille</li>
+<li>Roubaix</li>
 <footer>
    <center><h5> ©2024 HEALTH NORTH-Tous droits réservés.</center></h5>
    <center><h5> Contactez-nous : contact@healthnorth.fr|03 20 xx xx xx</h5></center><h5> 

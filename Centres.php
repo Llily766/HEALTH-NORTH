@@ -16,7 +16,7 @@
             <a href="personne.php">Se Connecter</a>
             <a href="lien.php">Creer un compte</a>
             <a class="active" href="Centres.php">Liste des centres</a>
-            <a href="PriseRDV.php">Prendre RDV</a>
+            
         </div> 
 
       <div class="container">
@@ -25,10 +25,12 @@
         <div> Choix du centre</div>
         <ul class="menuderoulant">
             
-            <li><a href="#">Centre Médical du Nord_Lille</a></li>
-            <li><a href="#">Clinique Saint-Martin-Dunkerque</li></a>
-            <li><a href="#">Pôle Santé des Flandres- Valenciennes</li></a>
-            <li><a href="#">Cabinet Médical de l'Artois-Arras</li></a>
+<li><a href="#">Centre Médical St Jean</li></a>
+<li><a href="#">Clinique du Parc</li></a>
+<li><a href="#">Hopital central</li></a>
+<li><a href="#">Cabinet d imagerie Bordeaux</li></a>
+<li><a href="#">Clinique du Bois a Lille</li></a>
+<li><a href="#">Roubaix</li></a>
         </ul> 
     </div>
 </body>

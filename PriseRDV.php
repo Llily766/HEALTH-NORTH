@@ -43,10 +43,10 @@
    <div class="topnav">
     <a  href="quiSommesNous.php">Qui sommes-nous?</a>
     <a href="carte.php">Contact</a>
-    <a class="personnes.php">Se Connecter</a>
+    <a class="personne.php">Se Connecter</a>
     <a href="lien.php">Creer un compte</a>
     <a href="Centres.php">Liste des centres</a>
-    <a href="active"href="PriseRDV.php">Prendre RDV</a>
+    
    </div>
    <img src="assets/labo.jpg "width="900px"heignt='200px'>
 

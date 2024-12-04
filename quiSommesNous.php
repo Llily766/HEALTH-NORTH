@@ -15,7 +15,7 @@
     <a href="personne.php">Se Connecter</a>
     <a href="lien.php">Creer un compte</a>
     <a href="Centres.php">Liste des centres</a>
-    <a href="PriseRDV.php">Prendre RDV</a>
+    
     </div> 
 
 

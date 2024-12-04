@@ -16,7 +16,7 @@
             <a href="personne.php">Se Connecter</a>
             <a href="active"href="lien.php">Creer un compte</a>
             <a href="Centres.php">Liste des centres</a>
-            <a href="PriseRDV.php">Prendre RDV</a>
+          
     <?php
     // Connexion à la base de données
     $servername = "192.168.1.15";
@@ -39,6 +39,24 @@
         echo "<div class='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative' role='alert'>
                 <strong class='font-bold'>Erreur!</strong>
                 <span class='block sm:inline'> Impossible de se connecter à la base de données: " . $e->getMessage() . "</span>
+              </div>";
+    }
+
+    try {
+        // Préparation et exécution de la requête
+        $stmtPersonnelMedical = $conn->prepare("SELECT * FROM Personnelmedical ORDER BY nom");
+        $stmtPersonnelMedical->execute();
+        $stmtTypedexamen = $conn->prepare("SELECT * FROM Typedexamen");
+        $stmtTypedexamen ->execute();
+        
+        // Récupération des résultats
+        $personnelMedicals = $stmtPersonnelMedical->fetchAll(PDO::FETCH_ASSOC);
+        $typedexamens = $stmtTypeDExamen->fetchAll(PDO::FETCH_ASSOC);
+    } catch(PDOException $e) {
+        echo "<div class='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative' role='alert'>
+                <strong class='font-bold'>Erreur!</strong>
+                <span clas
+s='block sm:inline'> Impossible de se connecter à la base de données: " . $e->getMessage() . "</span>
               </div>";
     }
     ?>
@@ -65,18 +83,20 @@ if (isset($centres)) {
                 </select>
             </div>
 
-            <!-- Sélection du médecin -->
-            <div>
+           <!-- Sélection du médecin -->
+           <div>
                 <label for="medecin" class="block text-sm font-medium text-gray-700 mb-2">Médecin</label>
                 <select id="medecin" name="medecin" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     <option value="">Sélectionnez un médecin</option>
-                    <option value="med1">Dr. Martin</option>
-                    <option value="med2">Dr. Dubois</option>
-                    <option value="med3">Dr. Bernard</option>
-                    <option value="med4">Dr. Robert</option>
+                    <?php
+                        if (isset($personnelMedicals)) {
+                            foreach($personnelMedicals as $personnelMedical) {
+                            echo "<option value='" . htmlspecialchars($personnelMedical['id']) . "'>".htmlspecialchars($personnelMedical['nom']) . "</option>";
+                            }
+                        }
+                    ?>
                 </select>
             </div>
-
             <!-- Sélection de la date -->
             <div>
                 <label for="date" class="block text-sm font-medium text-gray-700 mb-2">Date et heure du rendez-vous</label>
