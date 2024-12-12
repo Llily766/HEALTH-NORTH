@@ -11,10 +11,12 @@
     <div class="container">
         <div class="topnav">
             <a href="quiSommesNous.php">Qui sommes-nous?</a>
+            <a href="Presentation.php">Presenter
             <a class="active"href="carte.php">Contact</a>
             <a href="personne.php">Se Connecter</a>
             <a href="lien.php">Creer un compte</a>
-            <a href="Centres.php">Liste des centres</a>
+            <a href="planningmedecin.php">Planning</a>
+            <a href="centre.php">Liste des centres</a>
            
         </div> 
 
