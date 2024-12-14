@@ -1,38 +1,45 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Connexion à la base de données
-        $servername = "192.168.1.15";
-        $username = "healthnorth";
-        $password = "healthnorth-password";
-        $dbname = "inscriptions";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Informations de connexion à la base de données
+    $servername = "192.168.1.15";
+    $username = "healthnorth";
+    $password = "healthnorth-password";
+    $dbname = "inscriptions";
 
-        // Créer la connexion
-        $conn = new mysqli($servername, $username, $password, $dbname);
+    try {
+        // Connexion à la base de données avec PDO
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // Vérifier la connexion
-        if ($conn->connect_error) {
-            die("Échec de la connexion : " . $conn->connect_error);
+        // Récupération des données du formulaire
+        $nom = $_POST['Nom'] ?? '';
+        $password = $_POST['password'] ?? '';
+
+        // Validation des données
+        if (empty($nom) || empty($password)) {
+            die("Le nom et le mot de passe sont obligatoires.");
         }
 
-        // Récupérer les données du formulaire
+        // Préparation de la requête pour récupérer l'utilisateur
+        $sql = "SELECT mot_de_passe FROM patient WHERE nom = :nom";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([':nom' => $nom]);
 
-        $login = $_POST['login'];
-        $pass = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hachage du mot de passe
+        // Vérification si l'utilisateur existe
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        // Insérer les données dans la base
-        $sql = "INSERT INTO patient (nom,prenom,login,adresse, email, mot_de_passe) VALUES ('$user','$prenom','$login','$adresse', '$email', '$pass')";
-
-        //SELECT * from patient where login =   $login and password = $password
-
-
-        
-        if ($conn->query($sql) === TRUE) {
-            echo "Inscription réussie !";
+        if ($user) {
+            // Vérification du mot de passe
+            if (password_verify($password, $user['mot_de_passe'])) {
+                header("Location: lien.php");
+            } else {
+                echo "Mot de passe incorrect.";
+            }
         } else {
-            echo "Erreur : " . $sql . "<br>" . $conn->error;
+            echo "Utilisateur non trouvé.";
         }
-
-        // Fermer la connexion
-        $conn->close();
+    } catch (PDOException $e) {
+        echo "Erreur de connexion : " . $e->getMessage();
     }
-    ?>
+}
+?>

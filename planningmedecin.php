@@ -69,9 +69,16 @@
             textColor: 'black',
         },
         {
+            title:'Inscriptions',
+            start:'2024-12-02T10:00',
+            end :'2024-12-02T12:00',
+            color: 'yellow',
+            textColor: 'black',
+        },
+        {
             title:'Mariage',
-            start:'2023-02-01T24:00',
-            end:'2023-02-02T18:00',
+            start:'2024-02-01T24:00',
+            end:'2024-02-02T18:00',
             color: 'yellow',
             textColor: 'black',
             }],

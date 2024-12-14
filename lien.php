@@ -1,3 +1,52 @@
+<?php   
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        // Informations de connexion
+        $servername = "192.168.1.15";
+        $username = "healthnorth";
+        $password = "healthnorth-password";
+        $dbname = "inscriptions";
+
+        
+
+    try {
+        // Connexion à la BDD
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        // Récupération et validation des données du formulaire
+        if (!empty($_POST['date']) && !empty($_POST['centre']) && !empty($_POST['medecin']) && !empty($_POST['type_examen'])) {
+            $date = $_POST['date'];
+            $centre = (int) $_POST['centre'];
+            $medecin = (int) $_POST['medecin'];
+            $examen = (int) $_POST['type_examen'];
+
+            // Préparation de la requete SQL
+            $SQL="INSERT INTO rdv (`date`, id_cabinetMedical, id_medecin, id_examen) 
+            VALUES (:date, :centre, :medecin, :examen)";
+            $stmt = $conn->prepare($SQL);
+
+            // Exécution de la requete avec les parametres
+            $stmt->execute([
+                ':date' => $date,
+                ':centre' => $centre,
+                ':medecin' => $medecin,
+                ':examen' => $examen,
+            ]);
+
+            echo "<div style='color: green;'>Rendez-vous enregistré avec succes.</div>";
+        } else {
+            echo "<div style='color: red;'>Veuillez remplir tout les champs.</div>";
+        }
+    } catch (PDOException $e) {
+        echo "<div style='color: red;'>Erreur : " . $e->getMessage() . "</div>";
+    }    
+
+        
+        
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -57,14 +106,14 @@
         }
         ?>
         <h1 class="text-3xl font-bold text-gray-800 mb-8">Prise de rendez-vous médical</h1>
-
+        <form method="POST"action="">
     <div>
         <label for="centres" class="block text-sm font-medium text-gray-700 mb-2">cabinet Médical</label>
         <select id="centres" name="centre" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             <?php
             if (isset($cabinetsMedical)) {
                 foreach ($cabinetsMedical as $cabinetMedical) {
-                    echo "<option value='" . htmlspecialchars($cabinetMedical['id']) . "'>" . htmlspecialchars($cabinetMedical['nom']) . "</option>";
+                    echo "<option value='" . htmlspecialchars($cabinetMedical['id_CabinetMedical']) . "'>" . htmlspecialchars($cabinetMedical['nom']) . "</option>";
                 }
             }
             ?>
