@@ -9,7 +9,7 @@
 <body>
    
     <div class="container">   
-   <div class="topnav">
+    <div class="topnav">
     <a class="active"href="quiSommesNous.php">Qui sommes-nous?</a>
     <a href="Presentation.php">Presenter</a>
     <a href="carte.php">Contact</a>
@@ -49,6 +49,10 @@
     La biologie médicale est une composante importante du système de santé. 
     Elle concourt au diagnostic, au dépistage, à l’évaluation des risques, au suivi des patients, etc.</p>
     
+<h3>Actualités de l'hopital</h3>
+
+
+
 
 
 
