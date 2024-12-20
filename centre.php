@@ -9,15 +9,19 @@
 <body>
     
   
-    <div class="container">
-        <div class="topnav">
-            <a href="quiSommesNous.php">Qui sommes-nous?</a>
-            <a href="Presentation.php">Presenter</a>
-            <a href="carte.php">Contact</a>
-            <a href="personne.php">Se Connecter</a>
-            <a href="lien.php">Creer un compte</a>
-            <a href="planningmedecin.php">Planning</a>
-            <a class="active" href="centre.php">Liste des centres</a>
+<div class="container">   
+    <div class="topnav">
+        <a href="quiSommesNous.php" aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
+        <a href="Presentation.php" aria-label="Présenter notre plateforme">Présenter</a>
+        <a href="carte.php" aria-label="Nous contacter">Contact</a>
+        <a href="person.php" aria-label="Se connecter à son compte">Se Connecter</a>
+        <a href="lien.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
+        <a href="planningmedecin.php" aria-label="Voir le planning du médecin">Planning</a>
+        <a class="active" href="centre.php"Voir la liste des centres disponibles">Liste des centres</a>
+    </div>
+</div> 
+    </div>
+</div> 
       
 
       <div class="container">
