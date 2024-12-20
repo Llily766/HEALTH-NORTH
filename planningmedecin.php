@@ -13,9 +13,7 @@
 <div class="container">   
     <div class="topnav">
         <a href="quiSommesNous.php" aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
-        <a href="Presentation.php" aria-label="Présenter notre plateforme">Présenter</a>
         <a href="carte.php" aria-label="Nous contacter">Contact</a>
-        <a class="active" href="person.php" aria-label="Se connecter à son compte">Se Connecter</a>
         <a href="lien.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
         <a class="active"href="planningmedecin.php" aria-label="Voir le planning du médecin">Planning</a>
         <a href="centre.php" aria-label="Voir la liste des centres disponibles">Liste des centres</a>

@@ -1,52 +1,4 @@
-<?php   
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        // Informations de connexion
-        $servername = "192.168.1.15";
-        $username = "healthnorth";
-        $password = "healthnorth-password";
-        $dbname = "inscriptions";
-
-        
-
-    try {
-        // Connexion à la BDD
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        // Récupération et validation des données du formulaire
-        if (!empty($_POST['date']) && !empty($_POST['centre']) && !empty($_POST['medecin']) && !empty($_POST['type_examen'])) {
-            $date = $_POST['date'];
-            $centre = (int) $_POST['centre'];
-            $medecin = (int) $_POST['medecin'];
-            $examen = (int) $_POST['type_examen'];
-
-            // Préparation de la requete SQL
-            $SQL="INSERT INTO rdv (`date`, id_cabinetMedical, id_medecin, id_examen) 
-            VALUES (:date, :centre, :medecin, :examen)";
-            $stmt = $conn->prepare($SQL);
-
-            // Exécution de la requete avec les parametres
-            $stmt->execute([
-                ':date' => $date,
-                ':centre' => $centre,
-                ':medecin' => $medecin,
-                ':examen' => $examen,
-            ]);
-
-            echo "<div style='color: green;'>Rendez-vous enregistré avec succes.</div>";
-        } else {
-            echo "<div style='color: red;'>Veuillez remplir tout les champs.</div>";
-        }
-    } catch (PDOException $e) {
-        echo "<div style='color: red;'>Erreur : " . $e->getMessage() . "</div>";
-    }    
-
-        
-        
-        
-    }
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -63,7 +15,6 @@
     <div class="topnav">
         <a href="quiSommesNous.php" aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
         <a href="carte.php" aria-label="Nous contacter">Contact</a>
-        <a href="person.php" aria-label="Se connecter à son compte">Se Connecter</a>
         <a class="active" href="lien"aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
         <a href="planningmedecin.php" aria-label="Voir le planning du médecin">Planning</a>
         <a href="centre.php" aria-label="Voir la liste des centres disponibles">Liste des centres</a>
