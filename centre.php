@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,13 @@
       <div class="container">
         <img src="assets/labo.jpg "width="900px"heignt='200px'>
        
-
+      
+<li>Centre Médical St Jean</li>
+<li>Clinique du Parc</li>
+<li>Hopital central</li>
+<li>Cabinet d imagerie Bordeaux</li>
+<li>Clinique du Bois a Lille</li>
+<li>Roubaix</li>
    
 
       </div>
