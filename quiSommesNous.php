@@ -14,11 +14,13 @@
 
 </head>
 
+
 <body>
 
   <div class="container">
     <div class="topnav">
-      <a class="active"href=quiSommesNous? aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
+    <a href=Accueil.php aria-label="Accueil">Accueil</a>
+      <a class="active"href=quiSommesNous?.php aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
       <a href="carte.php" aria-label="Nous contacter">Contact</a>
       <a href="lien.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
       <a href="planningmedecin.php" aria-label="Voir le planning du médecin">Planning</a>

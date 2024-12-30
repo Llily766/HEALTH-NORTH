@@ -5,7 +5,7 @@ body{
     justify-content:center;
     flex-direction: center;
     align-items: center;
-    background-color: rgba(48, 59, 122, 0.351);
+    background-color: rgba(71, 162, 218, 0.351);
     font-family: 'Roboto', sans-serif;
   }
 h1 {
@@ -75,6 +75,7 @@ p{
   color:black
 }
 
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -99,6 +100,6 @@ p{
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04f09af3;
+  background-color: #04AA6D;
   color: white;
 }

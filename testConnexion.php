@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Informations de connexion à la base de données
     $servername = "192.168.1.15";
@@ -12,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Récupération des données du formulaire
-        $nom = $_POST['Nom'] ?? '';
-        $password = $_POST['password'] ?? '';
+        $nom = trim($_POST['Nom']);
+        $password = $_POST['password'];
 
         // Validation des données
         if (empty($nom) || empty($password)) {
@@ -21,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Préparation de la requête pour récupérer l'utilisateur
-        $sql = "SELECT mot_de_passe FROM patient WHERE nom = :nom";
+        $sql = "SELECT id_patient, nom mot_de_passe FROM patient WHERE nom = :nom";
         $stmt = $conn->prepare($sql);
         $stmt->execute([':nom' => $nom]);
 
@@ -31,7 +32,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($user) {
             // Vérification du mot de passe
             if (password_verify($password, $user['mot_de_passe'])) {
+                $_SESSION['id_patient'] = $user['id_patient'];
+                $_SESSION['nom'] = $user['nom'];
+            
                 header("Location: lien.php");
+                
             } else {
                 echo "Mot de passe incorrect.";
             }
